@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luke Dev Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="main.css">
+
+        <script src="https://kit.fontawesome.com/b244a3ce25.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <button class="nav-toggle" aria-;abe;="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Luke Reibel</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Software Dev</p>
+            <img src="images/Cute Headshot.jpg" alt="luke reibel headshot" class="intro__img">
+        </section>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Full Stack Web Development</h3>
+                    <p>Experience in designing and styling a website using HTML/CSS, and creating the functional, back-end, n-tier database using C#. Combined with Bootstrap and Javascript in order to create an engaging front-end.</p>
+                </div> <!-- service closed-->
+
+                <div class="service">
+                    <h3>C# Console Applications</h3>
+                    <p>Created numerous console apps while enrolled at Eleven Fifty Academy, and designed functioning apps for a variety of fields.</p>
+                </div> <!-- service closed-->
+                <!-- Would like to include IT as one of these hopefully, once I get certified.-->
+
+                <div class="service">
+                    <h3>Problem Solving</h3>
+                    <p>Nobody is perfect, especially Visual Studio. Hours and hours spent fixing bugs, creating new ones and testing for more, manifested great experience with solving all sorts of conceivable issues.</p>
+                </div> <!-- service closed-->
+
+            </div> <!-- services closed-->
+
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle-about">Software Developer based out of Indianapolis</p>
+
+            <div class="about-me__body">
+                <p>Ever since I was a child, I have loved working as a team with like-minded individuals on a focused task. Whether that was creating a database or winning a rugby game, my passion for great teamwork
+                     has never faltered. There is nothing more rewarding than helping other people, and being a part of something larger than just one person.
+                </p>
+                <p>Graduating from Eleven Fifty Academy's Software Development program has given me the opportunity to use my leadership, communication and problem solving skills in the technology industry.
+                     I am incredibly hungry for more learning and growth within the industry, and hope that my work can help everyone in the world.
+                </p>
+            </div>
+
+            <img src="images/GoodLookLuke.jpeg" alt="luke-beach-pic" class="about-me__img">
+            
+        </section>
+
+
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My Work</h2>
+            <p class="section__subtitle">A selection of my range of work</p>
+
+            <div class="portfolio">
+                <a href="https://github.com/Reibel19/RestaurantRater" class="portfolio__item">
+                    <img src="images/restaurant-rater-portfolio-pic.jpg" alt="restaurant-pic" class="portfolio__img">
+                </a>
+
+                <a href="https://github.com/Reibel19/ElevenNote" class="portfolio__item">
+                    <img src="images/elevenNote-portfolio-pic.jpg" alt="notebook-pic" class="portfolio__img">
+                </a>
+
+                <a href="https://github.com/Reibel19/FoodWatch" class="portfolio__item">
+                    <img src="images/foodwatch-portfolio-pic.jpg" alt="food-pic" class="portfolio__img">
+                </a>
+
+                <a href="https://github.com/Reibel19/GoldBadgeChallenges" class="portfolio__item">
+                    <img src="images/goldbadgechallenge-portfolio-pic.jpg" alt="console-pic" class="portfolio__img">
+                </a>
+                
+                <a href="https://github.com/Reibel19/SD_BrokenAppChallenge-master" class="portfolio__item">
+                    <img src="images/teamsplash-portfolio-pic.jpg" alt="splash-pic" class="portfolio__img">
+                </a>
+
+                <a href="https://github.com/Reibel19/RegisterPage" class="portfolio__item">
+                    <img src="images/registerpage-portfolio-pic.jpg" alt="register-pic" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-form" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <form action="https://formspree.io/f/xeqvaajy" method="POST">
+                <ul class="contact-form-list">
+                    <li class="contact-form-list-item">
+                            <label>Your email:<input type="email" name="_replyto" class="contact-form-list-field">
+                            </label>
+                    </li>
+    
+                    <li class="contact-form-list-item">
+                            <label>Your message:<textarea name="message" class="contact-form-list-field"></textarea>
+                            </label>
+                    </li>
+    
+                    <!-- your other form fields go here -->
+                </ul>
+
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:lukereibel@gmail.com" class="footer__link">lukereibel@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Reibel19">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io/reibel19">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/lreibel19">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/luke-reibel-929235203/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="java.js"></script>
+
+    </body>
+</html>
